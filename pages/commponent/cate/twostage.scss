@@ -1,0 +1,345 @@
+/* 二级分类 */
+.towstage .left {
+  width: 24%;
+  height: 100%;
+  background-color: #f8f8f8;
+  position: absolute;
+  left: 0;
+  top: 90upx;
+  padding-bottom: 40upx;
+  z-index: 900;
+}
+
+.left .classTitle {
+  height: 80upx;
+  line-height: 80upx;
+  text-align: center;
+  font-size: 24upx;
+  position: relative;
+  color: #333;
+}
+
+.actives {
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+.classactive {
+  width: 6upx;
+  height: 50upx;
+  position: absolute;
+  left: 15upx;
+  top: 15upx;
+  border-radius: 10upx;
+}
+
+.right {
+  width: 76%;
+  height: 100%;
+  position: absolute;
+  top: 85upx;
+  right: 0;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  padding: 10upx;
+  padding-bottom: 120upx;
+}
+
+.right .screen {
+  height: 70upx;
+  line-height: 70upx;
+  position: fixed;
+  width: 75%;
+  right: 0;
+  top: 90upx;
+  z-index: 900;
+  border-bottom: 1upx solid #F9F9F9;
+  background-color: #F9F9F9;
+  border-top-left-radius: 10upx;
+}
+
+.screen .tuijian {
+  font-size: 26upx;
+  color: #333;
+  font-weight: bold;
+}
+
+.screen .xiaoliang {
+  display: flex;
+  align-items: center;
+  float: right;
+  margin-left: 20upx;
+}
+
+.xiaoliang .name {
+  font-size: 26upx;
+  color: #999;
+  margin-right: 10upx;
+}
+
+.xiaoliang .icon {
+  width: 40upx;
+  line-height: 15upx;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #999;
+}
+
+.xiaoliang .icon text {
+  font-size: 22upx;
+}
+.place{  //占位元素
+	height: 70upx;
+	width: 75%;
+}
+.goods_list {
+  overflow: hidden;
+  padding-top: 20upx;
+}
+.goods_list .goods_item {
+  align-items: center;
+  border-bottom: 1upx solid #eee;
+  padding-bottom: 10upx;
+  margin-bottom: 15upx;
+  overflow: hidden;
+}
+
+.goods_item image {
+  width: 126upx;
+  height: 126upx;
+  float: left;
+  border-radius: 10upx;
+  margin-right: 5upx;
+}
+
+.goods_right {
+  /* float: left; */
+  padding: 0 10upx;
+  overflow: hidden;
+}
+
+.goods_right .goods_name {
+  font-size: 28upx;
+  overflow: hidden;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #333;
+  min-height: 50upx;
+}
+.goods_right .numbers{
+  overflow: hidden;
+  margin-top: 5upx;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  text{
+	  font-size: 22upx;
+  }
+}
+.goods_right .numbers text{
+  background-color: #FAEFF7;
+  padding: 2upx 10upx;
+  box-sizing: border-box;
+  color: $mycolor;
+  border-radius: 10upx;
+  margin-right: 15upx;
+}
+.goods_right .price{
+  line-height: 40upx;
+  font-size: 24upx;
+  overflow: hidden;
+}
+.price .money{
+  margin-right: 20upx;
+  font-size: 30upx;
+  font-weight: 600;
+  color: $mycolor;
+}
+.hx_money{
+  text-decoration: line-through;
+  color: #999;
+  font-size: 22upx;
+}
+.gouwuche{
+  font-size: 28upx;
+  float: right;
+  margin-right: 20upx;
+  color: $mycolor;
+}
+.nodata{
+  color: #ccc;
+  text-align: center;
+  font-size: 24upx;
+  margin-top: 30upx;
+  margin-bottom: 100upx;
+}
+.zanwu{
+  text-align: center;
+  color: #999;
+  height: 40upx;
+  line-height: 40upx;
+}
+.zanwu .iconfont{
+  line-height: 50upx;
+  color: #666;
+}
+.zanwu text{
+  margin-right: 20upx;
+}
+.mask{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 900;
+  opacity: 0.7;
+}
+.sku{
+  width: 100vw;
+  min-height: 30vh;
+  position: fixed;
+  bottom: -100%;
+  z-index: 910;
+  left: 0;
+  background-color: #ffffff;
+  padding: 20upx 4%;
+  border-top-left-radius: 10upx;
+  border-top-right-radius: 10upx;
+  border-bottom: 1upx solid #eee;
+  transition: all 0.3s;
+}
+.shows{
+  bottom: 0;
+  transition: all 0.3s;
+}
+.sku_top{
+  overflow: hidden;
+}
+.sku_top image{
+  height: 170upx;
+  width: 170upx;
+  float: left;
+  margin-right: 15upx;
+  border-radius: 8upx;
+}
+.sku_top .sku_title{
+  font-size: 24upx;
+  line-height: 35upx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-weight: bold;
+}
+.sku_top .moneys{
+  font-size: 28upx;
+  line-height: 40upx;
+  overflow: hidden;
+  margin-top: 20upx;
+  font-weight: bold;
+}
+.sku_top .kucun{
+  font-size: 24upx;
+  color: #999;
+  overflow: hidden;
+}
+.sku_list{
+  margin-top: 20upx;
+  overflow: hidden;
+  margin-bottom: 40upx;
+}
+.sku_name{
+  font-size: 24upx;
+  color: #666;
+  overflow: hidden;
+}
+.sku_tag{
+  overflow: hidden;
+  margin-top: 20upx;
+}
+.sku_tag .tag_s{
+  height: 50upx;
+  line-height: 18upx;
+  padding: 0 20upx;
+  text-align: center;
+  font-size: 22upx;
+  color: #333;
+  background-color: #F5F5F5;
+  border: 1upx solid rgba(0, 0, 0, .05);
+  float: left;
+  border-radius: 30upx;
+  margin-right: 20upx;
+  transition: all 0.2s;
+  margin-bottom: 20upx;
+}
+.number{
+  margin-top: 10upx;
+  border-top: 1upx solid #ccc;
+  width: 100%;
+  height: 80upx;
+  line-height: 80upx;
+  padding-top: 10upx;
+}
+.number .n_left{
+  float: left;
+  font-size: 28upx;
+  color: #333;
+}
+.number .n_right{
+  float: right;
+  height: 60upx;
+  width: 200upx;
+  background-color: #F5F5F5;
+  margin-top: 10upx;
+  border-radius: 5upx;
+}
+.n_right .jian,.jia{
+  width: 60upx;
+  height: 60upx;
+  text-align: center;
+  line-height: 60upx;
+  font-size: 42upx;
+}
+.jian{
+  float: left;
+}
+.jia{
+  float: right;
+}
+.jian:active{
+  background-color: #eee;
+}
+.jia:active{
+  background-color: #eee;
+}
+.n_right input{
+  width: 76upx;
+  float: left;
+  text-align: center;
+  margin-top: 6upx;
+}
+.btn_box{
+  margin-top: 40upx;
+}
+.btn_box .addcart_btn, .submit{
+  width: 40vw;
+  height: 56upx;
+  line-height: 56upx;
+  border-radius: 42upx;
+  font-size: 24upx;
+  text-align: center;
+  color: #ffffff;
+  float: left;
+  margin-left: 30upx;
+  margin-bottom: 30upx;
+}
+.btn_box view:active{
+  opacity: 0.8;
+}

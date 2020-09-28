@@ -1,0 +1,109 @@
+.left {
+  width: 24%;
+  height: 100%;
+  background-color: #f8f8f8;
+  position: absolute;
+  left: 0;
+  top: 90upx;
+  padding-bottom: 40upx;
+  z-index: 900;
+}
+
+.left .classTitle {
+  height: 80upx;
+  line-height: 80upx;
+  text-align: center;
+  font-size: 24upx;
+  position: relative;
+  transition: all 0.3s;
+  color: #333;
+}
+
+.actives {
+  background-color: #ffffff;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.classactive {
+  width: 6upx;
+  height: 50upx;
+  position: absolute;
+  left: 15upx;
+  top: 15upx;
+  border-radius: 10upx;
+  transition: all 0.3s;
+}
+
+.right {
+  width: 76%;
+  height: 100%;
+  position: absolute;
+  top: 85upx;
+  right: 0;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  padding: 10upx;
+  padding-bottom: 120upx;
+  z-index: 900;
+}
+.nodata{
+  color: #ccc;
+  text-align: center;
+  font-size: 24upx;
+  margin-top: 30upx;
+  margin-bottom: 100upx;
+}
+.zanwu{
+  text-align: center;
+  color: #999;
+  height: 40upx;
+  line-height: 40upx;
+  margin-top: 10upx;
+}
+.zanwu .iconfont{
+  line-height: 50upx;
+  color: #666;
+}
+.zanwu text{
+  margin-right: 20upx;
+}
+.top_img{
+  width: 100%;
+  /* height: 60%; */
+  display: block;
+  overflow: hidden;
+}
+.top_img image{
+  border-radius: 8upx;
+}
+.class_box{
+  margin-top: 20upx;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.class_box:after{
+  content: '';
+  width: 33%;
+  border:1px solid transparent;
+}
+.box_list{
+  max-width: 33%;
+  min-width: 33%;
+  margin: 20upx 0;
+}
+.box_list image{
+  width: 100upx;
+  height: 100upx;
+  display: block;
+  margin: 0 auto;
+}
+.list_name{
+  text-align: center;
+  font-size: 24upx;
+  color: #333;
+  font-weight: bold;
+  margin-top: 20upx;
+}
